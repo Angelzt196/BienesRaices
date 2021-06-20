@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Bienes Raices</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container" style="padding-top: 10px; padding-bottom: 10px;">
+            <a href="index.html">
+                <img class="img-fluid" src="img/logo.svg" alt="Logotipo de Bienes Raices">
+            </a>
+            
+            <div class="d-flex justify-content-end">
+                <a href="nosotros.html" class="text-decoration-none text-white" style="margin-right: 15px;"><strong>Nosotros</strong></a>
+                <a href="anuncios.html" class="text-decoration-none text-white" style="margin-right: 15px;"><strong>Anuncios</strong></a>
+                <a href="blog.html" class="text-decoration-none text-white" style="margin-right: 15px;"><strong>Blog</strong></a>
+                <a href="contacto.html" class="text-decoration-none text-white" style="margin-right: 15px;"><strong>Contacto</strong></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h1 class="text-center" style="margin-top: 30px;">Contacto</h1>
+
+        <h3 class="text-center">Llena el formulario de Contacto</h3>
+
+        <div class="container">
+            <form action="#" class="needs-validation" novalidate>
+                <fieldset class="text-info">
+                    <legend>Información Personal</legend>
+
+                    <div class="from-group">
+                        <label for="name" class="text-dark">Nombre:</label>
+                        <input type="text" name="name" id="validationCustom01" class="form-control" placeholder="Tu Nombre..." required>
+                        <div class="invalid-feedback">Llenar este campo</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="text-dark">E-Mail:</label>
+                        <input type="email" name="email" id="validationCustom02" class="form-control" placeholder="Tu correo electronico..." required>
+                        <div class="invalid-feedback">Llenar este campo</div>
+                    </div>
+
+                    <div class="form-group" >
+                        <label for="telefono" class="text-dark">Teléfono:</label>
+                        <input type="tel" name="email" id="validationCustom03" class="form-control" placeholder="Tu telefono..." required>
+                        <div class="invalid-feedback">Llenar este campo</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje" class="text-dark">Mensaje:</label>
+                        <textarea class="form-control" name="" id="validationCustom04" rows="5" required></textarea>
+                        <div class="invalid-feedback">Llenar este campo</div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="text-info">
+                    <legend>Información Sobre Propiedad</legend>
+
+                    <div class="form-group">
+                        <label for="opcion" class="text-dark">Vende o Compra:</label>
+                        <select name="" id="validationCustom05" class="custom-select" required>
+                            <option selected disabled value="">---</option>
+                            <option>Vende</option>
+                            <option>Compra</option>
+                        </select>
+                        <div class="invalid-feedback">Llenar este campo</div>
+                    </div>
+
+                    <div class="form-froup">
+                        <label for="cantidad" class="text-dark">Cantidad:</label>
+                        <input type="number" name="" id="validationCustom06" class="form-control" required>                        
+                        <div class="invalid-feedback">Llenar este campo</div>
+                    </div>
+                </fieldset>
+                
+
+                <fieldset class="text-info" style="margin-top: 20px;">
+                    <legend>Contacto</legend>
+
+                    <label for="" class="text-dark" ><strong>¿Cómo desea ser contactado?</strong></label>
+
+                    <div class="custom-control custom-radio">
+                        <div class="from-group">
+                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                            <label class="custom-control-label" for="customControlValidation2">Teléfono</label>
+                        </div>
+
+                        <div class="from-group" style="margin-top: 10px;">
+                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                            <label class="custom-control-label" for="customControlValidation3">E-Mail</label>
+                    </div>
+
+                    <label for="" class="text-dark" style="margin-top: 15px;"><strong>Si eligió Teléfono, elija la fecha y la hora</strong></label>
+
+                    <div class="form-group">
+                        <label for="" class="text-dark">Fecha:</label>
+                        <input type="date" name="" id="" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="text-dark">Hora:</label>
+                        <input type="time" name="" id="" class="form-control">
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <nav class="navbar-dark bg-dark text-white" style="margin-top: 30px; padding-bottom: 10px; padding-top: 10px;">
+            Todos los Derechos Reservados 2020 &copy;
+        </nav>
+    </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+</body>
+</html>
